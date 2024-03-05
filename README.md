@@ -57,7 +57,7 @@ const tradeInfo = trade.getTradeInfo(
   "TradeInfo": "aes256 encryption",
   "TradeSha": "sha256 hashing",
   "Version": "1.5",
-  "PayGateWay": "https://ccore.spgateway.com/MPG/mpg_gateway",
+  "PayGateWay": "https://ccore.newebpay.com/MPG/mpg_gateway",
   "MerchantOrderNo": "1581686501236"
 }
 ```
@@ -97,7 +97,7 @@ const tradeInfo = trade.getTradeInfo(
   "TradeInfo": "aes256 encryption",
   "TradeSha": "sha256 hashing",
   "Version": "1.5",
-  "PayGateWay": "https://ccore.spgateway.com/MPG/mpg_gateway",
+  "PayGateWay": "https://ccore.newebpay.com/MPG/mpg_gateway",
   "MerchantOrderNo": "1581686501236"
 }
 ```

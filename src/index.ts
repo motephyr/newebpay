@@ -36,8 +36,8 @@ export class TradeModules {
     trade.HashKey = tradeDto.HashKey;
     trade.HashIV = tradeDto.HashIV;
     trade.PayGateWay = tradeDto.PayGateWay;
-    trade.ReturnURL = `${trade.URL}/spgateway/callback?from=ReturnURL`;
-    trade.NotifyURL = `${trade.URL}/spgateway/callback?from=NotifyURL`;
+    trade.ReturnURL = `${trade.URL}/newebpay/callback?from=ReturnURL`;
+    trade.NotifyURL = `${trade.URL}/newebpay/callback?from=NotifyURL`;
     trade.ClientBackURL = tradeDto.ClientBackURL;
 
     return validate(tradeDto).then(err => {

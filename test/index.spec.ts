@@ -11,7 +11,7 @@ describe('# TradesModules', () => {
       MerchantID: 'MS88888888',
       HashKey: 'sdfkalusalfksmkfljsdkafulT41vTwL',
       HashIV: 'asdfasdfasd32mLP',
-      PayGateWay: 'https://ccore.spgateway.com/MPG/mpg_gateway',
+      PayGateWay: 'https://ccore.newebpay.com/MPG/mpg_gateway',
       ClientBackURL: 'http://localhost:3000/api/orders',
     });
     if (trade instanceof TradeDto) tradeModules.trade = trade;
@@ -27,7 +27,7 @@ describe('# TradesModules', () => {
       );
       expect(tradeModules.trade.HashIV).toEqual('asdfasdfasd32mLP');
       expect(tradeModules.trade.PayGateWay).toEqual(
-        'https://ccore.spgateway.com/MPG/mpg_gateway',
+        'https://ccore.newebpay.com/MPG/mpg_gateway',
       );
       expect(tradeModules.trade.ClientBackURL).toEqual(
         'http://localhost:3000/api/orders',
@@ -39,7 +39,7 @@ describe('# TradesModules', () => {
         const result = tradeModules.getTradeInfo(3700, '1', 'test@test.com');
         expect(result.MerchantID).toEqual('MS88888888');
         expect(result.PayGateWay).toEqual(
-          'https://ccore.spgateway.com/MPG/mpg_gateway',
+          'https://ccore.newebpay.com/MPG/mpg_gateway',
         );
       });
 
