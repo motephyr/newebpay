@@ -68,7 +68,7 @@ export class TradeModules {
    */
   private createMpgAesEncrypt(TradeInfo: ITradeData): string {
     const encrypt = createCipheriv(
-      'aes256',
+      'aes-256-cbc',
       this.trade.HashKey,
       this.trade.HashIV,
     );
